@@ -9,6 +9,7 @@ body{
     font-family: "Montserrat", sans-serif;
     display: flex;
     background-color: #141922;
+    color: white;
 }
 
 .nav-bar{
@@ -68,7 +69,6 @@ img{
 
 .plane{
     border: 1px solid white;
-    color: white;
     border-radius: 25px;
     padding: 1rem 2rem;
     display: flex;
@@ -97,7 +97,26 @@ li{
     margin: 1rem .5rem 2rem;
 }
 
+h1{
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+}
 
+.space-division{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 .5rem;
+}
+
+article{
+    text-align: center;
+    width: 250px;
+}
+
+article>img{
+    width: 100%;
+}
 
 
 

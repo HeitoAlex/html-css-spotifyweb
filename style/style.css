@@ -7,6 +7,8 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    background-color: #141922;
 }
 
 .nav-bar{
@@ -55,6 +57,45 @@ img{
 
 }
 
+.upgrade{
+    background-color: #080b12;
+    width: calc(100vw - 50px);
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 0;
+}
+
+.plane{
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.suggestions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.font-upper{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style-type: none;
+    color: grey;
+}
+
+li{
+    margin: 1rem .5rem 2rem;
+}
 
 
 

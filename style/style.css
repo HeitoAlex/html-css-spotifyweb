@@ -97,7 +97,12 @@ li{
     margin: 1rem .5rem 2rem;
 }
 
-h1{
+.played,
+.created{
+    margin-bottom: 2rem;
+}
+
+section.played>h1{
     margin-bottom: 1.5rem;
     padding-left: 1rem;
 }
@@ -106,18 +111,36 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 .5rem;
+    padding: 0 1rem;
 }
 
 article{
     text-align: center;
-    width: 250px;
+    width: 240px;
 }
 
 article>img{
     width: 100%;
 }
 
+p{
+    color: grey;
+}
+
+section.created>h1,
+section.popular>h1{
+    margin: 0 1rem .5rem;
+}
+
+section.created>p,
+section.popular>p{
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+section.popular img{
+    border-radius: 50%;
+}
 
 
 

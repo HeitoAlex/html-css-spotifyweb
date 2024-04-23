@@ -15,9 +15,10 @@ body{
 .nav-bar{
     background-color: black;
     width: 50px;
-    height: 100vh;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 img{
@@ -58,6 +59,10 @@ img{
 
 }
 
+main{
+    margin-left: 50px;
+}
+
 .upgrade{
     background-color: #080b12;
     width: calc(100vw - 50px);
@@ -65,12 +70,14 @@ img{
     display: flex;
     flex-direction: row-reverse;
     padding: 2rem 0;
+    position: fixed;
+    align-items: center;
 }
 
 .plane{
     border: 1px solid white;
     border-radius: 25px;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,11 +88,14 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 1.5rem;
 }
 
 .font-upper{
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 ul{
@@ -94,29 +104,34 @@ ul{
 }
 
 li{
-    margin: 1rem .5rem 2rem;
+    margin: .3rem 0;
+    padding: 1rem .7rem;
 }
 
-.played,
+.listened,
 .created{
     margin-bottom: 2rem;
 }
 
-section.played>h1{
+h1{
+    font-size: 26px;
+    padding-left: 1.3rem;
+}
+
+section.listened>h1{
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
 }
 
 .space-division{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     padding: 0 1rem;
+    justify-content: space-around;
 }
 
 article{
     text-align: center;
-    width: 240px;
+    width: calc((100% / 2) - 10px);
 }
 
 article>img{
@@ -134,7 +149,6 @@ section.popular>h1{
 
 section.created>p,
 section.popular>p{
-    padding-left: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -142,6 +156,12 @@ section.popular img{
     border-radius: 50%;
 }
 
+footer{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100vw;
+}
 
 
 

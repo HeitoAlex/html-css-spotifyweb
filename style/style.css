@@ -28,8 +28,8 @@ body{
 
 #logo-big{
     display: none;
-    width: 120px;
-    height: 80px;
+    width: 140px;
+    height: 90px;
 }
 
 .align>img{
@@ -230,6 +230,11 @@ div.song>img{
 
 div.song i{
     color: grey;
+    margin-right: 1rem;
+}
+
+div.song>div.fav{
+    margin: 0 0 0 auto;
 }
 
 .title{
@@ -252,12 +257,18 @@ div.title>p{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: .5rem;
+    margin: .5rem auto;
+    max-width: 250px;
 }
 
 div.function>i.fa-circle-play{
     font-size: 22px;
 }
+
+div.function>i.fa-solid{
+    margin: 0 1rem;
+}
+
 .time{
     font-size: 10px;
     display: flex;
@@ -288,7 +299,7 @@ div.progress-bar>span{
 }
 
 .volume{
-    width: 35%;
+    width: 30%;
     display: flex;
     align-items: center;
 }
@@ -371,11 +382,39 @@ div.volume>div.progress-bar{
         margin-left: 250px;
     }
 
-    main ul{
-        padding: 0 1.5rem;
+    main li{
+        margin: .3rem 1rem;
+        padding: 1rem .3rem;
     }
 
     .upgrade{
         width: calc(100vw - 250px);
     }
+
+    div.song>img{
+        width: 45px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    main li{
+        margin: .3rem .5rem;
+    }
+
+    .space-division{
+        justify-content: flex-start;
+    }
+
+    article{
+        text-align: center;
+        width: calc((100% / 4) - 10px);
+        margin-right: .5rem;
+    }
+
+    .song,
+    .volume{
+        max-width: 250px;
+    }
+
 }

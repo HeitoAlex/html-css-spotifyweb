@@ -21,15 +21,33 @@ body{
     position: fixed;
 }
 
-img{
-    width: 50%;
+#logo-small{
+    display: block;
+    margin: .5rem auto;
+}
+
+#logo-big{
+    display: none;
+    margin-left: 1rem;
+    width: 120px;
+    height: 80px;
+}
+.action>img{
+    width: 25px;
     padding: .5rem 0;
+    height: 40px;
+}
+
+.action>p{
+    display: none;
+}
+
+.playlist{
+    display: none;
 }
 
 .centered{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .col{
@@ -37,10 +55,13 @@ img{
 }
 
 .download{
-    width: 70%;
+    width: 20px;
     margin-bottom: 1rem;
 }
 
+hr{
+    display: none;
+}
 .user{
     background-color: grey;
     object-fit: cover;
@@ -54,9 +75,8 @@ img{
 }
 
 .user>img{
-    width: 75%;
-    padding-bottom: .7rem;
-
+    width: 23px;
+    padding-bottom: .2rem;
 }
 
 main{
@@ -72,6 +92,7 @@ main{
     padding: 2rem 0;
     position: fixed;
     align-items: center;
+    z-index: 1;
 }
 
 .plane{
@@ -106,6 +127,21 @@ ul{
 li{
     margin: .3rem 0;
     padding: 1rem .7rem;
+}
+
+.underline{
+    position: relative;
+}
+
+.underline::after{
+    content: '';
+    height: 3px;
+    width: 35%;
+    position: absolute;
+    bottom: .7rem;
+    left: 30%;
+    background-color: #adff2f;
+    border-radius: 20%;
 }
 
 .listened,
@@ -267,6 +303,30 @@ div.volume>div.progress-bar{
 
 
 
-/* @media screen and (min-width: 576px) {
+
+@media screen and (min-width: 576px){
     
-} */
+    #logo-small{
+        display: none;
+    }
+
+    #logo-big{
+        display: block;
+    }
+
+    .nav-bar{
+        width: 200px;
+    }
+
+    .action>img{
+        margin-left: 1rem;
+    }
+
+    main{
+        margin-left: 200px;
+    }
+
+    .upgrade{
+        width: calc(100vw - 200px);
+    }
+}

@@ -105,11 +105,11 @@ main{
 .plane{
     border: 1px solid white;
     border-radius: 25px;
-    padding: 1rem 2.5rem;
+    padding: .5rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .suggestions{
@@ -319,6 +319,32 @@ div.output>i{
 div.volume>div.progress-bar{
     width: 50%;
     margin-left: 1rem;
+}
+
+div.plane:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.align>p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.title>p:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa-circle-play:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 

@@ -87,6 +87,7 @@ hr{
 
 main{
     margin-left: 50px;
+    margin-bottom: 130px;
 }
 
 .upgrade{
@@ -331,10 +332,11 @@ div.volume>div.progress-bar{
 
     #logo-big{
         display: block;
+        padding-left: 1rem;
     }
 
     .centered{
-        margin: 0 0 0 1rem;
+        margin: 0;
     }
     .nav-bar{
         width: 250px;
@@ -343,6 +345,11 @@ div.volume>div.progress-bar{
     .align{
         display: flex;
         align-items: center;
+        padding-left: 1rem;
+    }
+
+    .selected{
+        border-left: 2px solid #adff2f;
     }
 
     .align>p{
@@ -356,7 +363,7 @@ div.volume>div.progress-bar{
 
     .playlist>h1{
         margin: 2rem 0 1rem;
-        padding: 0;
+        padding-left: 1rem;
     }
 
     .playlist i{
@@ -364,14 +371,14 @@ div.volume>div.progress-bar{
     }
 
     .playlist li{
-        margin: 1rem 0;
-        padding: 0;
+        margin: 0;
+        padding-left: 1rem;
         font-weight: bold;
     }
 
     hr{
         display: block;
-        margin-right: 1rem;
+        margin:0 1rem 1rem;
     }
 
     .font-white{
@@ -417,4 +424,13 @@ div.volume>div.progress-bar{
         max-width: 250px;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+    
+    article{
+        text-align: center;
+        width: calc((100% / 6) - 10px);
+        margin-right: .5rem;
+    }
 }

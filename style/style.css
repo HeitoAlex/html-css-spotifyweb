@@ -181,8 +181,27 @@ article{
     width: calc((100% / 2) - 10px);
 }
 
-article>img{
+.item>img{
     width: 100%;
+}
+
+.item{
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+}
+
+.repeat{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+.repeat i.fa-circle-play{
+    margin: auto;
+    font-size: 40px;
 }
 
 p{
@@ -291,12 +310,23 @@ color: white;
     border-radius: 25px;
 }
 
-div.progress-bar>span{
+div.progress-bar>div{
     position: absolute;
     height: 100%;
     width: 20%;
     background-color: #c1c1c1;
     border-radius: 25px;
+}
+
+div.progress-bar>span{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 100%;
+    top: -5px;
+    left: 18%;
+    display: none;
 }
 
 .volume{
@@ -336,14 +366,39 @@ li:hover{
     cursor: pointer;
 }
 
+.item:hover>div.repeat{
+    display: block;
+    display: flex;
+    cursor: pointer;
+}
+
+.listened .item:hover>img{
+    opacity: 0.5;
+}
+
 .title>p:hover{
     color: white;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.fa-circle-play:hover{
-    transform: scale(1.1);
+.fav>i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.function>.fa-circle-play:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+div.progress-bar:hover>div{
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+div.progress-bar:hover>span{
+    display: block;
     cursor: pointer;
 }
 

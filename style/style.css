@@ -179,6 +179,7 @@ section.listened p{
 article{
     text-align: center;
     width: calc((100% / 2) - 10px);
+    max-width: 250px;
 }
 
 .item>img{
@@ -186,8 +187,6 @@ article{
 }
 
 .item{
-    max-width: 200px;
-    max-height: 200px;
     position: relative;
 }
 
